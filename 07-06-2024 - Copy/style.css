@@ -1,0 +1,1433 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+a {
+    text-decoration: none;
+    list-style: none;
+    color: unset;
+}
+p {
+    margin: 0 !important;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.m-0 {
+    margin: 0;
+}
+input:focus-visible{
+    outline: none !important;
+}
+.primery-btn {
+    background: #2E7D32;
+    color: #FFFFFF;
+    padding: 11px 45px;
+    border: none;
+    border-radius: 50px;
+}
+/* header */
+.navbar {
+    border-radius: 250px;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar-brand img {
+    max-width: 68px;
+}
+.navbar .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 423px;
+    /* margin-right: 41px; */
+}
+
+.navbar .search-icon {
+    position: absolute;
+    left: 25px;
+    pointer-events: none; /* Allows clicks to pass through the icon */
+}
+
+.navbar .form-control {
+    padding-left: 64px;
+    height: 60px;
+    border-radius: 250px;
+    border: 1.5px solid #C8E6C9;
+}
+
+::placeholder {
+    color: red;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+  
+.nav-link {
+    text-decoration: none;
+    position: relative; /* Required for the before pseudo-element to be positioned relative to the link */
+  }
+  
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    color: #2E7D32;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 250px;
+    background-color: currentColor;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  
+  .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  li.nav-item {
+    padding-right: 24px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.buttons {
+    display: flex;
+    height: 55px;
+    align-items: center;
+}
+.buttons svg {
+    height: 55px;
+}
+.Influencer {
+    background: #2E7D32;
+    padding: 0px 24px;
+    border-radius: 250px;
+    align-items: center;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 18px;
+    font-weight: 500;
+}
+.Influencer svg {
+    padding-right: 12px;
+}
+span.line {
+    height: 28px;
+    width: 3px;
+    background: #C8E6C9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+}
+.wallate {
+    margin-right: 12px;
+}
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.buttons-mob {
+    display: none;
+}
+button.navbar-toggler {
+    border: 1px solid #2E7D32;
+    border-radius: 50%;
+}
+span.navbar-toggler-icon {
+    width: 22px;
+    color: #2E7D32;
+}
+.navbar-toggler:focus {
+
+    box-shadow: none;
+}
+
+.offcanvas-body .nav-link {
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.offcanvas-body .navbar-nav .nav-link.active, .offcanvas-body .navbar-nav .nav-link.show {
+    color: #2E7D32;
+}
+.offcanvas-body .nav-link::before {
+ content: none;
+}
+.offcanvas-body .navbar-nav {
+    align-items: end;
+    padding-right: 0 !important;
+}
+.offcanvas-header {
+    justify-content: flex-end;
+}
+.offcanvas-body ul {
+    padding: 0;
+}
+header.header nav {
+    /* position: absolute; */
+    margin-top: 27px;
+}
+header.header {
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+/* header fixed */
+header.header-fixed {
+    position: fixed;
+    background: var(--secondary-color);
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-animation: fadeInDown 1s ease-out forwards;
+    -moz-animation: fadeInDown 1s ease-out forwards;
+    -o-animation: fadeInDown 1s ease-out forwards;
+    animation: fadeInDown 1s ease-out forwards;
+    z-index: 9;
+}
+/* hero banner */
+.hero-banner .container-fluid {
+    padding: 0;
+}
+.hero-banner {
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    max-width: 700px;
+    padding: 0 15px;
+    top: 50%;   
+    transform: translate(0px, -50%);
+}
+.hero-text h1{
+    font-family: Londrina Solid;
+    font-size: 60px;
+}
+.light-green {
+    color: #C8E6C9;
+    -webkit-text-stroke: 1px #2E7D32;
+}
+.white {
+    color: white;
+    -webkit-text-stroke: 1px #2E7D32;
+}
+.green {
+    color: #2E7D32;
+}
+button.offer_btn {
+    background: #2E7D32;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.offer_btn svg {
+    height: 27px;
+    margin-right: 5px;
+}
+/* near by place */
+.nearbyplace {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img_div {
+    width: 23%;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.img_content {
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(255 255 255 / 0%));
+    padding: 10px;
+    box-sizing: border-box;
+    color: white; /* Text color */
+    border-radius: 0 0 24px 24px;
+}
+.img_div:nth-child(4n), /* Targets the 4th, 8th, 12th, ... */
+.img_div:nth-child(4n+4) { /* Targets every 4th starting from the 4th */
+    margin-right: 0;
+    /* width: calc(25% - 20px); */
+}
+.nearby-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 18px;
+    position: relative; /* Ensure positioning context */
+}
+
+.nearby-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Position it at the center of the title */
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px; /* Adjust as needed */
+    background-color: green;
+}
+
+/* restaurant */
+.restaurant, .cafes, .spas, .supermarkets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.restaurant-div, .cafes-div, .spas-div, .supermarkets-div {
+    width: 23%;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+.restaurant-div:nth-child(4n), .restaurant-div:nth-child(4n+4), .cafes-div:nth-child(4n), .cafes-div:nth-child(4n+4), .spas-div:nth-child(4n), .spas-div:nth-child(4n+4), .supermarkets-div:nth-child(4n), .supermarkets-div:nth-child(4n+4) {
+    margin-right: 0;
+    /* width: calc(25% - 20px); */
+}
+.restaurant-map, .cafes-map, .spas-map, .supermarkets-map {
+    display: flex;
+    justify-content: space-between;
+    color: #9D9693;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 14px;
+}
+.restaurant-map svg, .cafes-map svg, .spas-map svg, .supermarkets-map svg {
+    width: 18px;
+    margin-right: 4px;
+}
+.restaurant-name, .cafes-name, .spas-name, .supermarkets-name {
+    display: flex;
+    justify-content: space-between;
+}
+.wishlist {
+    height: 40px;
+    width: 40px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    background: #C8E6C9;
+    /* border: 1px solid black; */
+}
+.restaurant-name h3 , .cafes-name h3, .spas-name h3, .supermarkets-name h3 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 700;
+}
+.restaurant-name p, .cafes-name p, .spas-name p, .supermarkets-name p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+    color: #9D9693;
+}
+.restaurant-content, .cafes-content, .spas-content, .supermarkets-content {
+    margin-top: 20px;
+}
+.restaurant-map p, .cafes-map p, .spas-map p, .supermarkets-map p {
+    display: flex;
+    align-items: center;
+}
+.wishlist svg {
+    width: 18px;
+}
+.wishlist {
+    cursor: pointer;
+}
+.view-all {
+    display: flex;
+    justify-content: center;
+}
+.view-all button {
+    background: #2E7D32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 60px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    border: none;
+}
+
+/* footer */
+footer {
+    background: #2E7D32;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-brand img {
+    width: 100px;
+}
+footer h2 {
+    font-weight: 500;
+    color: #DADADA;
+    font-size: 18px;
+}
+.footer-link a {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+footer .col-lg-3 {
+    text-align: end;
+}
+.bottom_text {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.position-footer-right {
+    text-align: right;
+}
+.footer-bottom .row {
+    align-items: flex-end;
+}
+.footer-bottom::before{
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.bottom-main {
+    border-top: 2px dashed white;
+    padding-top: 72px;
+    margin-top: 50px;
+}
+.bottom_text p {
+    margin: 0;
+}
+.bottom_text p:first-child {
+    margin-bottom: 10px;
+}
+.footer-link li {
+    margin-bottom: 5px;
+}
+
+/* index page */
+.index .page-content {
+    display: flex;
+}
+.content, .banner {
+    width: 50%;
+}
+.index {
+    padding: 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index .user, .index .index-Influencer, .index .Provider {
+    border: none;
+    background: transparent;
+    border-radius: 70px;
+    font-size: 28px;
+    width: 100%;
+    font-weight: 600;
+    color: #2E7D32;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 0px#2E7D3240;
+    margin-bottom: 24px;
+}
+.index-buttons {
+    width: 500px;
+    margin-top: 36px;
+}
+.index .title h1 {
+    margin-top: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.index .index-Influencer svg {
+    width: 55px;
+}
+.banner-img {
+    position: relative;
+    width: 100%;
+    padding-top: 100vh;
+}
+.banner-img iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.banner-img img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.index .banner .text {
+    font-family: "Over the Rainbow", cursive;
+    position: absolute;
+    top: 21%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 1.5;
+    color: #2E7D32;
+    font-style: normal;
+}
+.index .user:hover, .index .index-Influencer:hover, .index .Provider:hover {
+    color: #FFFFFF;
+    background: #2E7D32;
+    transition: 0.5s;
+}
+.back-icon {
+    position: absolute;
+    bottom: 0;
+    top: 27px;
+    left: 25px;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0px 10px 50px 0px #D0CFDF4D;
+}
+.back-icon svg {
+    width: 35px;
+}
+.back-icon:hover {
+    background: #2E7D32;
+    transition: 0.5s;
+}
+/* login page  */
+.index .title p {
+    color: #9D9693;
+    text-align: center;
+    font-size: 18px;
+}
+.login-form ::placeholder {
+    color: #9D9693;
+    font-size: 20px;
+    background: #FAFAFA;
+}
+form.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form input {
+        border: none;
+        width: 100%;
+}
+.login-form .login-field {
+    background: #FAFAFA;
+    border-radius: 15px;
+    padding: 23px 0;
+    padding-left: 22px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+}
+.login-form-div {
+    margin-top: 36px;
+    width: 500px;
+}
+.email-input-div {
+    margin-bottom: 20px;
+}
+.login-form button {
+    background: green;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 50px;
+    padding: 20px 0;
+    font-size: 28px;
+}
+a.forgot {
+    text-align: center;
+    color: green;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 21px 0;
+}
+.login-form .login-field svg {
+    margin-right: 10px;
+}
+.login-form .login-field svg {
+    margin-right: 25px;
+}
+p.continue {
+    color: #9D9693;
+    text-align: center;
+    padding: 18px 0;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+.apple, .google {
+    padding: 13px;
+}
+.facebook {
+    background: #4092FF;
+}
+.facebook, .google, .apple {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 18px;
+    box-shadow: 0px 1px 4px 0px #00000026;
+    margin: 0 9px;
+}
+.sign-in {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #9D9693;
+}
+.social-icon svg {
+    width: 100%;
+}
+.google, .apple {
+    padding: 11px;
+}
+.sign-in a {
+    color: #2E7D32;
+}
+/* forgot password  */
+.page-icon img {
+    width: 190px;
+    position: relative;
+    top: 120px;
+}
+.otp-input-fields input {
+    height: 50px;
+    width: 50px;
+    margin: 0 12px;
+    border-radius: 15px;
+    background: #FAFAFA;
+    color: #2E7D32;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+}
+.otp-input-fields {
+    display: flex;
+    justify-content: center;
+}
+.resend span {
+    color: #2E7D32;
+    font-weight: 600;
+}
+.resend {
+    color: #9D9693;
+    text-align: center;
+    margin: 13px 0;
+    font-size: 20px;
+}
+/* sign up page  */
+.item1 { grid-area: male; }
+.item2 { grid-area: female; }
+.item3 { grid-area: name; }
+.item4 { grid-area: email; }
+.item5 { grid-area: phone; }
+.item6 { grid-area: password; }
+.item7 { grid-area: agree; }
+.item8 { grid-area: submit; }
+
+
+.sign-up-form {
+    display: grid !important;
+    grid-template-areas:
+      'male female name name name name'
+      'email email email email email email'
+      'phone phone phone password password password'
+      'agree agree agree agree agree agree'
+      'submit submit submit submit submit submit';
+    gap: 10px;
+    padding: 10px;
+  }
+
+.sign-up-form .item1 input[type="radio"], .sign-up-form .item2 input[type="radio"] {
+    display:none;
+}
+.maleRadio input[type="radio"] + label {
+    display:inline-block;
+    width:40px;
+    height:23px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    /* background: white; */
+    background:url(assets/image/man-green.svg) left top no-repeat;
+    cursor:pointer;
+}
+
+.maleRadio input[type="radio"]:checked + label {
+    /* background: green; */
+	background:url(assets/image/man-white.svg) left top no-repeat;
+}
+
+.femaleRadio input[type="radio"] + label {
+    display:inline-block;
+    width:40px;
+    height:23px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    /* background-color: white; */
+    background:url(assets/image/woman-green.svg) left top no-repeat;
+    cursor:pointer;
+}
+
+.femaleRadio input[type="radio"]:checked + label {
+    /* background: green; */
+    background:url(assets/image/woman-white.svg) left top no-repeat;
+}
+
+.maleRadio, .femaleRadio  {
+	  display:inline-block;
+}
+.checked {
+    background-color: green; /* Background color when radio button is checked */
+}
+/* .login-field {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+} */
+.maleRadio {
+    background-color: #ffffff;
+}
+.femaleRadio {
+    background-color: #ffffff;
+}
+.selected {
+    background-color: green !important;
+}
+.sign-up-form .login-field svg {
+    width: 30px;
+}
+.sign-up-form ::placeholder {
+    font-size: 16px;
+}
+.sign-up-form .login-field svg {
+    margin-right: 7px;
+}
+.agree-terms {
+    text-align: center;
+}
+/* Checkbox Input */
+.checkbox-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border: 1px solid green;
+    background-color: transparent;
+    transition: 0.3s;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+.item7.terms-condition a {
+    color: #2E7D32;
+}
+.terms-condition {
+    display: flex;
+    color: #9D9693;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+}
+.checkbox-btn span::before {
+    content: '';
+    /* display: inline-block; */
+    width: 11px;
+    height: 8px;
+    border-bottom: 3px solid #2E7D32;
+    border-left: 3px solid #2E7D32;
+    transform: scale(0) rotate(-45deg);
+    position: relative;
+    bottom: 2px;
+    transition: 0.6s;
+}
+
+.checkbox-btn input {
+    display: none;
+}
+
+.checkbox-btn input:checked ~ span {
+    background-color: transparent;
+}
+
+.checkbox-btn input:checked ~ span::before {
+    transform: scale(1) rotate(-45deg);
+}
+
+/* select location page */
+.location-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 26px;
+    border: 1px solid #DADADA;
+    border-radius: 15px;
+    width: 450px;
+}
+.location-card h1 {
+    color: #2D303D;
+    font-size: 28px;
+    font-weight: bold;
+}
+.location-card p {
+    color: #565A70;
+    font-size: 16px;
+    font-weight: 600;
+}
+.address-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.address-btn a {
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 20px;
+}
+.select-location .title h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.select-location .content {
+    justify-content: flex-start;
+}
+/* edit address */
+.edit-address .back-icon {
+    position: unset;
+    margin-right: 15px;
+}
+.edit-address .heading {
+    display: flex;
+    align-items: center;
+}
+.edit-address .title h1 {
+    margin: 0 !important;
+    font-size: 22px;
+}
+
+.field1 { grid-area: Floor; }
+.field2 { grid-area: Address; }
+.field3 { grid-area: City; }
+.field4 { grid-area: Landmark; }
+.field5 { grid-area: State; }
+.field6 { grid-area: Zipcode; }
+.field7 { grid-area: radio-btn; }
+.field8 { grid-area: terms-condition; }
+.field9 { grid-area: primery-btn; }
+
+.address-form form {
+    display: grid ;
+    grid-template-areas:
+      'Floor Floor Address Address City City'
+      'Landmark Landmark State State Zipcode Zipcode'
+      'radio-btn radio-btn radio-btn radio-btn radio-btn radio-btn'
+      'terms-condition terms-condition terms-condition terms-condition terms-condition terms-condition'
+      'primery-btn primery-btn primery-btn primery-btn primery-btn primery-btn';
+    gap: 10px;
+    padding: 10px;
+  }
+
+.edit-address .primery-btn {
+    width: 50%;
+    padding: 18px 0;
+    margin: 0 auto;
+    font-size: 22px;
+}
+.address-field {
+    display: flex;
+    flex-direction: column;
+}
+.radio-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.address-field label {
+    font-weight: 700;
+    color: #9D9693;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.address-field input {
+    border: 2px solid #DADADA;
+    border-radius: 15px;
+    padding: 18px 24px;
+}
+.radio-btn input, .radio-btn label {
+    margin-right: 10px;
+}
+.radio-btn input[type="radio"] {
+    width: 20px; 
+    height: 20px; 
+}
+
+.radio-btn input[type="radio"]:checked {
+    accent-color: green; 
+}
+.main-content {
+    padding-top: 150px;
+}
+/* media queries */
+@media (min-width: 1551px) {
+    .container {
+        max-width: 1720px;
+    }
+}
+@media (min-width: 992px) {
+    .offcanvas {
+        display: none;
+    }
+}
+@media (max-width: 1650px) {
+    li.nav-item {
+        /* font-size: 20px; */
+    }
+
+}
+@media (max-width: 1550px) {
+    .navbar .input-container {
+        width: 300px;
+    }
+    li.nav-item {
+        padding-right: 12px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1399px) {
+    .navbar .input-container {
+        width: 235px;
+    }
+    li.nav-item {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .nearby-title {
+        font-size: 30px;
+    }
+    .restaurant-name p, .cafes-name p, .spas-name p, .supermarkets-name p  {
+        font-size: 12px;
+    }
+    .restaurant-name h3, .cafes-name h3, .spas-name h3, .supermarkets-name h3 {
+        font-size: 20px;
+    }
+    .restaurant-map, .cafes-map, .spas-map, .supermarkets-map {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1199px) {
+    .navbar .input-container {
+        width: 235px;
+    }
+    li.nav-item {
+        padding-right: 8px;
+        font-size: 14px;
+    }
+    .buttons svg {
+        height: 40px;
+    }
+    .Influencer {
+        font-size: 18px;
+    }
+    .navbar {
+        height: 65px;
+    }
+    .navbar-brand img {
+        height: 51px;
+    }
+    .navbar .form-control {
+        height: 40px;
+    }
+    .navbar .search-icon {
+        left: 15px;
+        height: 20px;
+    }
+    .navbar .input-container {
+        width: 165px;
+    }
+    .navbar .form-control {
+        padding-left: 50px;
+    }
+    .Influencer {
+        margin-right: 12px;
+    }
+    span.line {
+        margin-right: 0;
+    }
+    .wallate {
+        margin-right: 0px;
+    }
+    .account svg {
+        width: auto;
+    }
+    span.line2 {
+        margin-right: 14px;
+    }
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    button.offer_btn {
+        font-size: 16px;
+    }
+    .restaurant .rating, .cafes .rating, .spas .rating, .supermarkets .rating {
+        text-align: right;
+    }
+    .restaurant .rating svg, .cafes .rating svg, .spas .rating svg, .supermarkets .rating svg {
+        margin-right: -10px;
+    }
+    .view-all button {
+        padding: 8px 37px;
+        font-size: 20px;
+    }
+    .index-buttons {
+        width: 400px;
+    }
+    .index .user, .index .index-Influencer, .index .Provider {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+    .index-buttons svg {
+        width: 31px;
+    }
+    .index .index-Influencer svg {
+        width: 44px;
+    }
+    .index .title h1 {
+        font-size: 30px;
+    }
+    .index .title h1 {
+        margin-top: 15px;
+    }
+    .login-form-div {
+        width: 440px;
+    }
+}
+@media (max-width: 992px) {
+    header.header-fixed {
+        z-index: 99;
+    }
+    a.navbar-brand {
+        margin: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .btn-none {
+        display: none;
+    }
+    .buttons-mob {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        width: auto;
+        right: 50%;
+        left: 50%;
+        justify-content: center;
+        z-index: 99;
+    }
+    .bottom-nav {
+        display: flex;
+        background: #2E7D32;
+        border-radius: 50px;
+        height: 45px;
+        align-items: center;
+        border: 2px solid white;
+    }
+    .buttons-mob .Influencer {
+        padding: 0;
+    }
+    .buttons-mob .Influencer svg {
+        width: auto;
+        padding: 0;
+    }
+    .buttons-mob svg {
+        width: auto;
+    }
+    .Influencer {
+        margin-right: 0;
+        position: relative;
+        border: 2px solid white;
+        bottom: 16px;
+    }
+    .wallate, .account {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .hero-text {
+        max-width: 398px;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+    button.offer_btn {
+        padding: 10px 13px;
+    }
+    .offer_btn svg {
+        height: 22px;
+        margin-right: 1px;
+    }
+    
+}
+@media (max-width: 991px) {
+    .img_content {
+        font-size: 14px;
+    }
+    .img_div:nth-child(4n), .img_div:nth-child(4n+4) {
+        margin-right: 20px;
+    }
+    .img_content {
+        border-radius: 0 0 10px 10px;
+    }
+    .restaurant-div, .cafes-div, .spas-div, .supermarkets-div {
+        width: 47%;
+    }
+    .restaurant-div:nth-child(2n), .restaurant-div:nth-child(2n+2), .cafes-div:nth-child(2n), .cafes-div:nth-child(2n+2), .spas-div:nth-child(2n), .spas-div:nth-child(2n+2), .supermarkets-div:nth-child(2n), .supermarkets-div:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    .restaurant .rating svg, .cafes .rating svg, .spas .rating svg, .supermarkets .rating svg {
+        margin-right: 7px;
+    }
+    .restaurant .rating, .cafes .rating, .spas .rating, .supermarkets .rating {
+        width: 73px;
+    }
+    .content, .banner {
+        width: 100%;
+    }
+    .index .page-content {
+        flex-direction: column;
+    }
+    .content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .banner-img iframe {
+        position: unset;
+    }
+    .banner-img img {
+        position: unset;
+    }
+    .banner-img iframe {
+        position: unset;
+        height: 50vh;
+    }
+    .banner-img {
+        position: relative;
+        width: 100%;
+        padding-top: 0;
+    }
+    .index .banner .text {
+        font-size: 7vw;
+    }
+    .welcome .user, .welcome .index-Influencer, .welcome .Provider {
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .page-icon img {
+        margin-bottom: 70%;
+    }
+}
+@media (max-width: 767px) {
+    header.header nav {
+        height: 44px;
+    }
+    .navbar-brand img {
+        height: 32px;
+    }
+    button.navbar-toggler {
+        padding: 0 5px;
+    }
+    .navbar .form-control {
+        height: 29px;
+    }
+    .navbar .search-icon {
+        height: 16px;
+    }
+    .hero-text {
+        max-width: 305px;
+    }
+    .hero-text h1 {
+        font-size: 27px;
+    }
+    button.offer_btn {
+        padding: 7px 11px;
+    }
+    button.offer_btn {
+        font-size: 10px;
+    }
+    .offer_btn svg {
+        height: 17px;
+        margin-right: -1px;
+    }
+    .view-all button {
+        margin-top: 15px;
+    }
+    .index-buttons {
+        width: 300px;
+    }
+    .index .user, .index .index-Influencer, .index .Provider {
+        font-size: 16px;
+        padding: 5px 0px;
+    }
+    .index-buttons svg {
+        width: 25px;
+    }
+    .index .index-Influencer svg {
+        width: 27px;
+    }
+    .index-buttons {
+        width: 300px;
+        margin-top: 10px;
+    }
+    .index-buttons svg {
+        width: 25px;
+    }
+    .index .title h1 {
+        font-size: 24px;
+    }
+    .index .logo img {
+        width: 80px;
+    }
+    .welcome .user, .welcome .index-Influencer, .welcome .Provider {
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+    .address-form form {
+        grid-template-areas:
+          'Floor Floor Floor Address Address Address'
+          'City City City Landmark Landmark Landmark'
+          'State State State Zipcode Zipcode Zipcode'
+          'radio-btn radio-btn radio-btn radio-btn radio-btn radio-btn'
+          'terms-condition terms-condition terms-condition terms-condition terms-condition terms-condition'
+          'primery-btn primery-btn primery-btn primery-btn primery-btn primery-btn';
+    }
+    .address-form form {
+        margin: 0;
+    }
+    .main-address {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 577px) {
+    .mob-banner {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .desk-banner {
+        display: none;
+    }
+    .mob-banner {
+        display: block;
+    }
+    .hero-text {
+        top: 72%;
+    }
+    .img_div {
+        width: 45%;
+    }
+    .img_div:nth-child(2n), .img_div:nth-child(2n+2) {
+        margin-right: 0;
+    }
+    .nearbyplace {
+        margin-top: 29px;
+    }
+    .restaurant .rating, .cafes .rating, .spas .rating, .supermarkets .rating {
+        width: 55px;
+    }
+    .restaurant .rating svg, .cafes .rating svg, .spas .rating svg, .supermarkets .rating svg {
+        margin-right: -9px;
+    }
+    .otp-page .title p {
+        width: 280px;
+    }
+    .location-card h1 {
+        font-size: 22px;
+    }
+    .location-card p {
+        font-size: 14px;
+    }
+    .address-btn a {
+        font-size: 18px;
+    }
+    .location-card {
+        width: 320px;
+    }
+    .address-form form {
+        grid-template-areas:
+          'Floor'
+          'Address'
+          'City' 
+          'Landmark'
+          'State'
+          'Zipcode'
+          'radio-btn'
+          'terms-condition'
+          'primery-btn';
+    }
+    .address-field input {
+        padding: 6px 24px;
+    }
+}
+@media (max-width: 425px) {
+    .navbar .input-container {
+        width: 130px;
+    }
+    .hero-text h1 {
+        font-size: 22px;
+    }
+    .offer_btn svg {
+        height: 14px;
+        margin-right: -6px;
+        margin-left: -10px;
+    }
+    .restaurant-div, .cafes-div, .spas-div, .supermarkets-div  {
+        width: 100%;
+        margin-right: 0;
+    }
+    .restaurant .rating svg, .cafes .rating svg, .spas .rating svg, .supermarkets .rating svg {
+        margin-right: 6px;
+    }
+    .restaurant .rating, .cafes .rating, .spas .rating, .supermarkets .rating {
+        width: 71px;
+    }
+    .back-icon svg {
+        width: 25px;
+    }
+    .back-icon {
+        height: 50px;
+        width: 50px;
+    }
+    .login-form-div {
+        width: 300px;
+    }
+    .login-form .login-field {
+        padding: 12px 0;
+        padding-left: 22px;
+    }
+    .login-form button {
+        padding: 9px 0;
+        font-size: 22px;
+    }
+    a.forgot {
+        font-size: 18px;
+    }
+    .sign-in {
+        font-size: 18px;
+    }
+    .index .title p {
+        font-size: 14px;
+    }
+    .sign-up-form {
+        grid-template-areas:
+          'male male male female female female'
+          'name name name name name name'
+          'email email email email email email'
+          'phone phone phone phone phone phone'
+          'password password password password password password'
+          'agree agree agree agree agree agree'
+          'submit submit submit submit submit submit';
+      }
+    .gender {
+        justify-content: center;
+    }
+    .terms-condition {
+        align-items: center;
+    }
+}
+@media (max-width: 375px) {
+    button.offer_btn {
+        padding: 7px 9px;
+    }
+    .hero-text h1 {
+        font-size: 20px;
+    }
+    .otp-input-fields input {
+        height: 35px;
+        width: 35px;
+        border: 1px solid;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+    .resend {
+        font-size: 18px;
+    }
+    .location-card {
+        width: 282px;
+    }
+    .address-btn a {
+        font-size: 16px;
+    }
+    .primery-btn {
+        padding: 8px 26px;
+    }
+    .edit-address .primery-btn {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .agree-terms {
+        font-size: 14px;
+    }
+}
